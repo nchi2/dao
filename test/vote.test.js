@@ -6,14 +6,14 @@ contract("B2", async () => {
   before(async () => {
     vote = await daovote.new();
   }); //describe를 하기전에 테스트 할 것 = before()
-  describe("우주최강 김성현", async {} => {
+  describe("function test", async () => {
     it("setUser", async () => {
-        await vote.setUser("spaceBest choi")
+      await vote.setUser("spaceBest choi");
     });
     it("getUser", async () => {
-        const result = await vote.getUser();
-        assert.equal(result, "spaceBest choi")
-    })
+      const result = await vote.getUser();
+      assert.equal(result, "spaceBest choi");
+    });
   });
 });
 // contract 함수 안에 첫 아규먼트로 contract 이름, 뒤 콜백 function에는 async 함수를 사용, async 함수안에는 먼저 실행될 함수로 before, 그 뒤로는 describe.

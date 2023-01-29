@@ -1,4 +1,3 @@
-```
 // SPDX-License-Identifier: GPL-3.0
 // 20221123
 
@@ -99,4 +98,3 @@ contract B2 {
         }
     }
 }
-```
